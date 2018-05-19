@@ -1,0 +1,51 @@
+{
+  "name": "toiletwizard",
+  "version": "1.0.0",
+  "description": "\"# ToiletWizard\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bosmare/ToiletWizard.git"
+  },
+  "author": "Bosco Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bosmare/ToiletWizard/issues"
+  },
+  "homepage": "https://github.com/Bosmare/ToiletWizard#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "file-loader": "^1.1.11",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}
