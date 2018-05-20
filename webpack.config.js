@@ -23,6 +23,17 @@ module.exports = {
             name: '[name].[ext]'
           }
         }
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: [
+          {loader: "babel-loader"},
+          {
+            loader: "react-svg-loader",
+            options: {jsx: true}
+          }
+        ]
       }
     ]
   },

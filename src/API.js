@@ -7,14 +7,14 @@ const statusHelper = response => (
 )
 
 const logAndReturn = data => {
-  console.log(data)
+  console.log('response data: ', data)
   return data
 }
 
-export const getAllToilets = () => {
+export const getAllToilets = () => (
   fetch('https://toilets.freska.io/toilets')
     .then(statusHelper)
     .then(response => response.json())
     .catch(error => error)
     .then(logAndReturn)
-}
+)

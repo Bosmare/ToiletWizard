@@ -6,7 +6,7 @@ function* ToiletSaga() {
   yield (
     response.error
       ? yield put({type: 'TOILETS_ERROR', error: response.error})
-      : yield put({type: 'TOILETS_SUCCESS'})
+      : yield put({type: 'TOILETS_SUCCESS', toiletData: response})
   )
 }
 

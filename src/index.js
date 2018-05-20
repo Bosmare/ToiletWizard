@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 import createSagaMiddleware from 'redux-saga'
 import {createStore, applyMiddleware} from 'redux'
+import {Provider} from 'react-redux'
 import {rootReducer} from './redux.js'
 import {rootSaga} from './sagas.js'
 
@@ -21,6 +22,7 @@ const store = createStore(
 )
 sagaMiddleware.run(rootSaga)
 
-store.dispatch({type: 'TOILETS_REQUESTED'})
-
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <Provider store={store} children={<App />} />,
+  document.getElementById('app')
+)

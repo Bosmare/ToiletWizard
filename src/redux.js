@@ -29,13 +29,25 @@ const REDUCERS = {
 }
 
 export const rootReducer = (state, action) => {
-  if (!state) return initialState
-
-  if (REDUCERS[action.type]){
-    return REDUCERS[action.type] (state,action)
+  
+  let nextState
+  console.log('### REDUX LOG ###')
+  
+  if (!state) {
+    console.log('setting initial state')
+    nextState = initialState
+  }
+  else if (REDUCERS[action.type]){
+    nextState = REDUCERS[action.type] (state,action)
   }
   else {
     console.log('undefined action type: ' + action.type)
-    return state
+    nextState = state
   }
+
+  console.log('action: ', action)
+  console.log('next state: ', nextState)
+  console.log('### END LOG ###')
+
+  return nextState
 }

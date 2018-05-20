@@ -1,0 +1,61 @@
+.container{}
+
+p{
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+body {
+  margin: 0px;
+  background-color: #0a0351;
+  color: white;
+  fill: white;
+}
+
+.title{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.toiletName{
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.iconRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconText{
+  margin-top: 2px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.dataIcon{
+  margin-right: 7px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location{
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+
+.toiletsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.toiletBox{
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 250px;
+}
