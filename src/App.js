@@ -1,5 +1,4 @@
 import React from 'react'
-import * as R from 'ramda'
 import {connect} from 'react-redux'
 
 import ToiletMen from './icons/toilet_men.svg'
