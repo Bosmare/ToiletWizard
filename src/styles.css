@@ -12,6 +12,7 @@ body {
 }
 
 .title{
+  text-align: center;
   font-size: 25px;
   font-weight: bold;
 }
@@ -55,7 +56,7 @@ body {
 .toiletBox{
   padding: 5px;
   margin: 5px;
-  border: 2px solid white;
-  border-radius: 10px;
+  border: 1px solid white;
+  border-radius: 2px;
   width: 250px;
 }
