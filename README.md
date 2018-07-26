@@ -1,3 +1,3 @@
-"# ToiletWizard - Front End for displaying toilet status" 
+"# ToiletWizard - Front End demo " 
 
-To view, open index.html in the dist folder
+To view, open index.html in an intact dist folder
